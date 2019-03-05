@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_gaming_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_blue" />
+
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/font_one"
+        android:text="15"
+        android:textColor="@android:color/white"
+        android:textSize="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="220dp"
+        android:onClick="onImage1Click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elephant"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="onImage2Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:onClick="onImage3Click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_1"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="onImage4Click"
+        android:src="@drawable/elephant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_2"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/text_hint"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/white"
+        android:fontFamily="@font/font_one"
+        android:gravity="center"
+        android:text="Sun"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
